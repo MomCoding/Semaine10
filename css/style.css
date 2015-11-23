@@ -1,0 +1,219 @@
+/* reset CSS */
+
+html, body {
+	width:100%;
+	height:100%;
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+/*=====================================================================================
+BASE
+=======================================================================================*/
+
+body {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+	color:#fff;
+	background:#000 url(../img/darkNoise.png) repeat scroll;
+	font-family: Tahoma,Arial,sans-serif;
+	font-size:13px;
+}
+
+.conteneur, .game, .sectionLeft, .sectionMiddle, .sectionRight {
+	height: 100%;
+}
+
+
+
+/*=====================================================================================
+OVERFLOW
+=======================================================================================*/
+html, body, .conteneur, .game, .sectionLeft {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.sectionMiddle, .sectionRight {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+/*=====================================================================================
+POSITION DIMENSION ET MARGE
+=======================================================================================*/
+
+.game {
+	padding-bottom: 32px;
+}
+
+.topBar {
+	height: 32px;
+}
+
+.bigCookie {
+	width: 256px;
+	height: 256px;
+}
+
+.btn {
+	height: 48px;
+	width: 80px;
+}
+
+.blockCenter {
+	height: 128px;
+}
+
+.separeHoriz {
+	height: 16px;
+}
+
+ .titleBox  {
+ 	padding-left: 16px;
+ }
+
+
+.sectionRight, .sectionMiddle{
+	padding-left: 32px;
+}
+
+.btnRight {
+	position: absolute;
+	right: 16px;
+}
+
+.crate {
+	height: 60px;
+	padding: 8px 8px;
+}
+
+.icon {
+	height: 44px;
+}
+.product {
+	height: 64px;
+}
+
+/*=====================================================================================
+BORDURE ET FORMATAGE
+=======================================================================================*/
+.topBar {
+	box-shadow:0px -2px 4px #666 inset;
+	color:#ccc;
+}
+
+.game {
+	font-family: Kavoon, Tahoma,Arial,sans-serif;
+}
+
+.storeTitle, .nbCookie {
+	text-align: center;
+}
+
+.buyIt, .btnLeft, .btnRight {
+	box-shadow: 0px 0px 3px #666 inset, 0px 0px 4px #000;
+	text-align: center;
+}
+
+.storeTitle {
+	font-size: 30px;
+}
+
+.crate {
+	border: 0.5px solid black;
+}
+/*=====================================================================================
+BACKGROUND
+=======================================================================================*/
+
+.topBar {
+	background:url(../img/darkNoise.png) repeat scroll;
+}
+
+.bigCookie {
+	background:url(../img/perfectCookie.png) repeat scroll;
+	background-size: cover;
+}
+
+.game {
+	background:url(../img/bgBlue.jpg) repeat scroll ;
+}
+
+.nbCookie {
+	background: rgba(0, 0, 0, 0.4) none repeat scroll;
+}
+
+.separeHoriz {
+	background:url(../img/panelHorizontal.png) repeat-x scroll;
+}
+
+.icon, .btnLeft, .btnRight {
+	background: url(../img/darkNoise.png) repeat scroll;
+}
+
+.blockGrandma {
+	background:url(../img/grandmaBackground.png) repeat scroll;
+}
+
+.blockFarm {
+	background:url(../img/farmBackground.png) repeat scroll;
+}
+
+.blockFactory {
+	background:url(../img/factoryBackground.png) repeat scroll;
+}
+
+.blockMine {
+	background:url(../img/mineBackground.png) repeat scroll;
+}
+
+.blockShipment {
+	background:url(../img/shipmentBackground.png) repeat scroll;
+}
+
+.blockAlchemy {
+	background:url(../img/alchemylabBackground.png) repeat scroll;
+}
+
+.blockPortal {
+	background:url(../img/portalBackground.png) repeat scroll;
+}
+
+.blockTime {
+	background:url(../img/timemachineBackground.png) repeat scroll;
+}
+
+.blockAntimatter {
+	background:url(../img/antimattercondenserBackground.png) repeat scroll;
+}
+
+.blockPrism {
+	background:url(../img/prismBackground.png) repeat scroll;
+}
+
+.crate {
+	background: url(../img/panelHorizontal.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.product {
+	background:url(../img/storeTile.jpg) no-repeat scroll;
+	background-size: cover;
+}
+
+.buyIt {
+	background: #000 url("img/darkNoise.png") repeat scroll;
+}
+
+.sectionMiddle, .sectionRight {
+	background:url(../img/panelVertical.png) repeat-y scroll;
+}
