@@ -22,7 +22,7 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	
+
 	color:#fff;
 	background:#000 url(../img/darkNoise.png) repeat scroll;
 	font-family: Tahoma,Arial,sans-serif;
@@ -33,11 +33,10 @@ body {
 	height: 100%;
 }
 
-
-
 /*=====================================================================================
 OVERFLOW
 =======================================================================================*/
+
 html, body, .conteneur, .game, .sectionLeft {
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -47,6 +46,7 @@ html, body, .conteneur, .game, .sectionLeft {
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
+
 /*=====================================================================================
 POSITION DIMENSION ET MARGE
 =======================================================================================*/
@@ -81,6 +81,9 @@ POSITION DIMENSION ET MARGE
  	padding-left: 16px;
  }
 
+.sectionLeft {
+	padding-top: 48px;
+}
 
 .sectionRight, .sectionMiddle{
 	padding-left: 32px;
@@ -99,6 +102,7 @@ POSITION DIMENSION ET MARGE
 .icon {
 	height: 44px;
 }
+
 .product {
 	height: 64px;
 }
@@ -106,6 +110,7 @@ POSITION DIMENSION ET MARGE
 /*=====================================================================================
 BORDURE ET FORMATAGE
 =======================================================================================*/
+
 .topBar {
 	box-shadow:0px -2px 4px #666 inset;
 	color:#ccc;
@@ -128,9 +133,14 @@ BORDURE ET FORMATAGE
 	font-size: 30px;
 }
 
+.buyIt {
+	padding: 2px 0px;
+}
+
 .crate {
 	border: 0.5px solid black;
 }
+
 /*=====================================================================================
 BACKGROUND
 =======================================================================================*/
@@ -211,7 +221,7 @@ BACKGROUND
 }
 
 .buyIt {
-	background: #000 url("img/darkNoise.png") repeat scroll;
+	background: #000 url(../img/darkNoise.png) repeat scroll;
 }
 
 .sectionMiddle, .sectionRight {
