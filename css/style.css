@@ -33,6 +33,10 @@ body {
 	height: 100%;
 }
 
+.product, .bigCookie, .buyIt p, .icon {
+	cursor: pointer;
+}
+
 /*=====================================================================================
 OVERFLOW
 =======================================================================================*/
@@ -59,17 +63,12 @@ POSITION DIMENSION ET MARGE
 	height: 32px;
 }
 
-.bigCookie {
-	width: 256px;
-	height: 256px;
-}
-
 .btn {
 	height: 48px;
 	width: 80px;
 }
 
-.blockCenter {
+.blockGrandma, .blockFarm, .blockFactory, .blockMine, .blockShipment, .blockAlchemy, .blockPortal, .blockTime, .blockAntimatter, .blockPrism {
 	height: 128px;
 }
 
@@ -107,6 +106,20 @@ POSITION DIMENSION ET MARGE
 	height: 64px;
 }
 
+.miniCookie {
+	margin-top: -10px;
+	padding-left: 20px;
+}
+
+.productIcon {
+	height: 64px;
+}
+
+.buyIt {
+	padding-top: 8px;
+	padding-bottom: -4px;
+}
+
 /*=====================================================================================
 BORDURE ET FORMATAGE
 =======================================================================================*/
@@ -120,7 +133,7 @@ BORDURE ET FORMATAGE
 	font-family: Kavoon, Tahoma,Arial,sans-serif;
 }
 
-.storeTitle, .nbCookie {
+.storeTitle, .count, .owned {
 	text-align: center;
 }
 
@@ -129,16 +142,21 @@ BORDURE ET FORMATAGE
 	text-align: center;
 }
 
-.storeTitle {
+.storeTitle, .nbCookie, .cookie, .productName, .owned {
 	font-size: 30px;
 }
 
-.buyIt {
-	padding: 2px 0px;
+.red {
+	color: red;
 }
 
 .crate {
 	border: 0.5px solid black;
+}
+.owned {
+	opacity: 0.3;
+	color: #000;
+	text-shadow: 0px 0px 8px #FFF;
 }
 
 /*=====================================================================================
@@ -149,16 +167,11 @@ BACKGROUND
 	background:url(../img/darkNoise.png) repeat scroll;
 }
 
-.bigCookie {
-	background:url(../img/perfectCookie.png) repeat scroll;
-	background-size: cover;
-}
-
 .game {
 	background:url(../img/bgBlue.jpg) repeat scroll ;
 }
 
-.nbCookie {
+.count {
 	background: rgba(0, 0, 0, 0.4) none repeat scroll;
 }
 
@@ -218,6 +231,66 @@ BACKGROUND
 .product {
 	background:url(../img/storeTile.jpg) no-repeat scroll;
 	background-size: cover;
+	opacity: 0.6;
+}
+
+.cursorIconDefault {
+	background:url(../img/cursoriconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.grandmaIconDefault {
+	background:url(../img/grandmaIconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.farmIconDefault {
+	background:url(../img/farmIconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.factoryIconDefault {
+	background:url(../img/factoryIconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.mineIconDefault {
+	background:url(../img/mineIconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.shipmentIconDefault {
+	background:url(../img/shipmentIconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.alchemyIconDefault {
+	background:url(../img/alchemylabIconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.portalIconDefault {
+	background:url(../img/portalIconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.timeIconDefault {
+	background:url(../img/timemachineIconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.antimatterIconDefault {
+	background:url(../img/antimattercondenserIconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.prismIconDefault {
+	background:url(../img/prismIconOff.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.miniCookie {
+	background:url(../img/money.png) no-repeat scroll;
 }
 
 .buyIt {
@@ -226,4 +299,67 @@ BACKGROUND
 
 .sectionMiddle, .sectionRight {
 	background:url(../img/panelVertical.png) repeat-y scroll;
+}
+
+/*=====================================================================================
+CSS POUR JS
+=======================================================================================*/
+
+.green {
+	color:green;
+}
+
+.cursorIconUnlocked {
+	background:url(../img/cursoricon.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.grandmaIconUnlocked {
+	background:url(../img/grandmaicon.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.farmIconUnlocked {
+	background:url(../img/farmIcon.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.factoryIconUnlocked {
+	background:url(../img/factoryIcon.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.mineIconUnlocked {
+	background:url(../img/mineIcon.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.shipmentIconUnlocked {
+	background:url(../img/shipmentIcon.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.alchemyIconUnlocked {
+	background:url(../img/alchemylabIcon.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.portalIconUnlocked {
+	background:url(../img/portalIcon.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.timeIconUnlocked {
+	background:url(../img/timemachineIcon.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.antimatterIconUnlocked {
+	background:url(../img/antimattercondenserIcon.png) no-repeat scroll;
+	background-size: cover;
+}
+
+.prismIconUnlocked {
+	background:url(../img/prismIcon.png) no-repeat scroll;
+	background-size: cover;
 }
