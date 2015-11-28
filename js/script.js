@@ -14,7 +14,7 @@ var ownedSelect = $('.owned')
 
 var tempo = 10000;
 var nbCookie = 0;
-var perSecond = 0.1;
+var perSecond = 0;
 
 var product = function(name, price, owned, perSec, totalPrice) {
   this.name = name;
@@ -91,7 +91,7 @@ Click sur gros cookie
 clickCookieSelect.click(function(){
   nbCookie++;
   nbCookieSelect.empty();
-  nbCookieSelect.append(nbCookie);
+  nbCookieSelect.append((Math.round(nbCookie*10))/10);
 });
 
 /*=====================================================================================
@@ -103,6 +103,7 @@ productSelect.click(function(){
   if (nbCookie>=tableau[buy].price) {
     perSecond += tableau[buy].perSec;
     perSecond = (Math.round(perSecond*10))/10;
+    nbCookie -= tableau[buy].price;
     tableau[buy].maj();
     priceSelect.eq(buy).empty();
     priceSelect.eq(buy).append(tableau[buy].price);
@@ -110,26 +111,27 @@ productSelect.click(function(){
     ownedSelect.eq(buy).append(tableau[buy].owned);
     perSecondSelect.empty();
     perSecondSelect.append(perSecond);
+    nbCookieSelect.empty();
+    nbCookieSelect.append((Math.round(nbCookie*10))/10);
   };
 });
 
 
 /*=====================================================================================
-AUTO CLICK
+Fonction Genérale
 =======================================================================================*/
-
-//definir fonction generale avec interval et inclure tout le reste
-
 
 
 var myFunction = function(){
-    clearInterval(interval);
-    tempo=1000*(1/perSecond);
-    nbCookie++;
+  if (perSecond>0) {  //autoclick
+    nbCookie += perSecond/10;
     nbCookieSelect.empty();
-    nbCookieSelect.append(nbCookie);
-    interval = setInterval(myFunction, tempo);
-}
-var interval = setInterval(myFunction, tempo);
+    nbCookieSelect.append((Math.round(nbCookie*10))/10);
+  }
+  for (var i = 0; i < tableau.length; i++) {
+
+  };
+};
+var interval = setInterval(myFunction, 100);
 
 });
