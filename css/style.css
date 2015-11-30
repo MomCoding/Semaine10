@@ -124,7 +124,6 @@ POSITION DIMENSION ET MARGE
 BORDURE ET FORMATAGE
 =======================================================================================*/
 
-
 .topBar {
 	box-shadow:0px -2px 4px #666 inset;
 	color:#ccc;
@@ -316,7 +315,7 @@ CSS POUR JS
 }
 
 .grandmaIconUnlocked {
-	background:url(../img/grandmaicon.png) no-repeat scroll;
+	background:url(../img/grandmaIcon.png) no-repeat scroll;
 	background-size: cover;
 }
 
