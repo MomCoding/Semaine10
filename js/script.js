@@ -1,5 +1,13 @@
 $(function () {
 
+  /* call the php that has the php array which is json_encoded */
+  $.getJSON('./php/index.php', function(data) {
+    /* data will hold the php array as a javascript object */
+    console.log(data.name);
+    console.log(data.admin);
+  });
+
+
 /*=====================================================================================
 RESET ET VARIABLE
 =======================================================================================*/
